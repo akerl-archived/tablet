@@ -8,7 +8,7 @@ tablet
 [![Build Status](https://img.shields.io/travis/akerl/tablet.svg)](https://travis-ci.org/akerl/tablet)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
-SHORT_DESCRIPTION
+Terminal formatting library for drawing flexible-width tables
 
 ## Usage
 

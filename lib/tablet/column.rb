@@ -1,8 +1,8 @@
 ##
 # Define column and related constructs
 module Tablet
-  DEFAULT_WIDTH_CALC = proc { |rows| rows.max_by(&:length) }
-  DEFAULT_FORMATTER = proc { |row, size| row.slice(0, size) }
+  DEFAULT_WIDTH_CALC = proc { |cells| cells.max_by(&:length) }
+  DEFAULT_FORMATTER = proc { |cell, size| cell.slice(0, size) }
 
   ##
   # Column object
@@ -33,18 +33,18 @@ module Tablet
       @formatter ||= params[:formatter] || DEFAULT_FORMATTER
     end
 
-    def resize!(rows)
-      @width = parse_size(rows)
+    def resize!(cells)
+      @width = parse_size(cells)
     end
 
-    def format(row)
-      params[:formatter].call(row, @size)
+    def format(cell)
+      params[:formatter].call(cell, @size)
     end
 
     private
 
-    def parse_size(rows)
-      return @width_calc.call(rows) if @width_calc.respond_to? :call
+    def parse_size(cells)
+      return @width_calc.call(cells) if @width_calc.respond_to? :call
       if @width_calc.is_a?(Enumerable)
         if @width_calc.all? { |x| x.is_a? Integer }
           return @width_calc.to_a.sort.reverse

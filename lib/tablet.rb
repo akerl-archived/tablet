@@ -10,4 +10,5 @@ module Tablet
   end
 end
 
+require 'tablet/column'
 require 'tablet/table'

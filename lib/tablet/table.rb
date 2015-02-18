@@ -65,6 +65,7 @@ module Tablet
       row = sized_columns.map(&:first).map(&:title)
       print_row(row, sized_columns, true)
       width = sized_columns.map(&:last).reduce(:+) + meta_width
+      return unless @options[:divider]
       puts @options[:divider] * (width / @options[:divider].size)
     end
 

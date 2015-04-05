@@ -1,3 +1,5 @@
+**Inactive Project:** This was being developed primarily for [taskit](https://github.com/akerl/taskit), which I've paused development on. Development on this is likewise paused until/unless I find another use for it.
+
 tablet
 =========
 

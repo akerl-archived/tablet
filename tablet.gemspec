@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'highline', '~> 1.7.0'
 
   s.add_development_dependency 'rubocop', '~> 0.53.0'
-  s.add_development_dependency 'goodcop', '~> 0.2.0'
+  s.add_development_dependency 'goodcop', '~> 0.3.0'
   s.add_development_dependency 'rake', '~> 12.3.0'
   s.add_development_dependency 'rspec', '~> 3.7.0'
   s.add_development_dependency 'fuubar', '~> 2.3.0'

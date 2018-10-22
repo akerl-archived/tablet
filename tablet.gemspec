@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.files       = `git ls-files`.split
   s.test_files  = `git ls-files spec/*`.split
 
-  s.add_dependency 'cymbal', '~> 1.0.0'
+  s.add_dependency 'cymbal', '~> 2.0.0'
   s.add_dependency 'highline', '~> 1.7.0'
 
   s.add_development_dependency 'rubocop', '~> 0.59.0'

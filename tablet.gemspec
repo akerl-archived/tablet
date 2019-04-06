@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'cymbal', '~> 2.0.0'
   s.add_dependency 'highline', '~> 1.7.0'
 
-  s.add_development_dependency 'rubocop', '~> 0.66.0'
+  s.add_development_dependency 'rubocop', '~> 0.67.2'
   s.add_development_dependency 'goodcop', '~> 0.6.0'
   s.add_development_dependency 'rake', '~> 12.3.0'
   s.add_development_dependency 'rspec', '~> 3.8.0'
